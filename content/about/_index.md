@@ -4,6 +4,6 @@ description: "Twenty years from now you will be more disappointed by the things 
 featured_image: ''
 ---
 
-Gopher and developer
+Platform Engineer 
 
-* gocelery
+Go Python Rust

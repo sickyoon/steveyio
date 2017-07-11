@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <section class="mw7 avenir">
+        <h2 class="baskerville fw1 ph3 ph0-l bb">
+            Posts
+        </h2>
+        {{ range where .Site.Pages "Type" "post" }}
+        <article class="bb b--black-10">
+            <a class="db pv4 ph3 ph0-l no-underline black dim" href="{{ .RelPermalink }}">
+                <div class="flex flex-column flex-row-ns">
+                    <div class="">
+                    </div>
+                    <div class="w-100 w-100-ns pl3-ns">
+                        <h1 class="f3 fw1 baskerville mt0 lh-title">{{ .Title }}</h1>
+                        <p class="f6 f5-l lh-copy">
+                            {{ .Summary }}
+                        </p>
+                        <p class="f6 lh-copy mv0">
+                            {{ .Date.Format "Jan 2, 2006" }}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </section>
+{{ end }}

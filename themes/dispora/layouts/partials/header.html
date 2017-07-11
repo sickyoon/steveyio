@@ -1,0 +1,17 @@
+<header class="cover bg-top bg-near-white">
+    <div class="w-80 center">
+        {{ partial "nav.html" . }}
+        <div class="dt w-100 tc fw1" style="padding-top: 6rem; padding-bottom: 4rem;">
+            <div class="dtc tc">
+                <h1 class="fw4 f1-l ph5-l f3-s ph2-s mv0 pt0 pv3 avenir" style="margin-top: -100px;">
+                    {{- .Title | default .Site.Title -}}
+                </h1>
+                {{ with .Params.description  }}
+                <h2 class="f4-l fw1 i avenir pv2 mv0 avenir">
+                    {{ . }}
+                </h2>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>

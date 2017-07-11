@@ -1,7 +1,7 @@
 title = "stevey.io"
 baseURL = "http://stevey.io"
 languageCode = "en-us"
-theme = "gohugo-theme-ananke"
+theme = "min"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"

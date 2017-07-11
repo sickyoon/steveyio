@@ -4,6 +4,8 @@ description: "Twenty years from now you will be more disappointed by the things 
 featured_image: ''
 ---
 
+<img class="mr2 dib v-mid br3 ma0 pa0 mt2 h3 w3" src="https://avatars0.githubusercontent.com/u/24367477" alt="avatar">
+
 Platform Engineer 
 
 Go Python Rust

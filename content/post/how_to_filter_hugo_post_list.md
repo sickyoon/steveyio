@@ -1,18 +1,18 @@
----
-date: 2016-12-20T19:34:32+09:00
-description: "How to filter Hugo post list"
-featured_image: ""
-tags: [
++++
+Description = "How to filter Hugo post list"
+Tags = [
   "hugo",
   "golang",
 ]
-categories: [
+Categories = [
   "hugo",
   "blog",
 ]
-title: "How to filter Hugo post list"
-author: "Sick Yoon"
----
+date = "2016-12-20T19:34:32+09:00"
+title = "How to filter Hugo post list"
+thumbnail = "https://gohugo.io/img/hugo.png"
+author = "Sick Yoon"
++++
 
 Hugo is a fast static site generator based on Go language. <br>
 It has wide variety of themes available on its [theme site].

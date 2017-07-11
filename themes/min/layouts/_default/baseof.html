@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+{{ partial "header.html" . }}
+
+<body class="ma0 avenir bg-white">
+
+    {{ partial "nav.html" . }}
+
+    <main class="">
+    {{ block "main" . }}
+    {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    {{ partial "scripts.html" . }}    
+</body>
+</html>

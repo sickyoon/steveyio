@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="athelas pa4 f4 lh-copy mw7 center">
+    <h1 class="tc f1 mv0">{{ .Title }}</h1>
+    <time class="pt4 pb4 tc f4 db dark-gray">{{ .Date.Format "Jan 2, 2006" }}</time>
+    {{ .Content }}
+</article>
+{{ end }}

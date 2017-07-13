@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+{{ partial "header.html" . }}
+
+<body class="ma0">
+
+    {{ partial "sidebar.html" . }}
+
+    <div class="main pa4">
+    {{ block "main" . }}
+    {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+
+    {{ partial "scripts.html" . }}
+</body>
+
+</html>

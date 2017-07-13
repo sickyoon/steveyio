@@ -1,0 +1,47 @@
+<nav class="h-100 fixed fl dib-l dn w-side sidebar">
+    <div class="tc mv4">
+        <a class="link dim" href="{{- .Site.BaseURL -}}">
+            <h1 class="f2 fw1 avenir white mt3 mb2">{{ .Site.Title }}</h1>
+            <h2 class="f5 fw2 avenir light-gray tracked pt0 mt0">{{ .Site.Params.Description }}</h2>
+        </a>
+    </div>
+    
+    <ul class="list mt5 cf ph4">
+        {{ range .Site.Menus.main }}
+        <li class="pv2 f5 fw1">
+            <a class="avenir link dim white" href="{{.URL}}">
+                <div class="w-100">
+               {{ .Name }}
+               </div>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <div class="w-90 mb3 db pl3 center bottom-0 absolute cf tc">
+        <a class="link dim white ph2" href="/">
+            <i class="fa fa-github fa-2x"></i>
+        </a>
+        <a class="link dim white ph2" href="/">
+            <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+        <a class="link dim white ph2" href="/">
+            <i class="fa fa-envelope fa-2x"></i>
+        </a>
+    </div>
+</nav>
+<nav class="w-100 fixed dib-m dib-s dib-xs dn-l sidebar ph3">
+    <a class="dib link dim" href="{{- .Site.BaseURL -}}">
+        <h1 class="f3 fw1 avenir white mv3">{{ .Site.Title }}</h1>
+    </a>
+    <ul class="dib list cf pl5">
+        {{ range .Site.Menus.main }}
+        <li class="dib pv2 ph3 f5 fw1">
+            <a class="avenir link dim white" href="{{.URL}}">
+                <div class="w-100">
+               {{ .Name }}
+               </div>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

@@ -1,25 +1,19 @@
 +++
-Description = "How to filter Hugo post list"
-Tags = [
-  "hugo",
-  "golang",
-]
-Categories = [
-  "hugo",
-  "blog",
-]
-date = "2016-12-20T19:34:32+09:00"
 title = "How to filter Hugo post list"
+description = "How to filter Hugo post list"
+date = "2016-12-20T19:34:32+09:00"
+categories = ["golang"]
+tags = ["golang", "hugo"]
 thumbnail = "https://gohugo.io/img/hugo.png"
-author = "Sick Yoon"
 +++
 
-Hugo is a fast static site generator based on Go language. <br>
+Hugo is a fast static site generator based on Go language.
 It has wide variety of themes available on its [theme site].
 This blog uses [hugo-redlounge] theme for instance.
 Often times, you need to add custom pages and want to filter them out from your main page.
 For example, "about" page of this blog does not appear on the main list.
 Thankfully, Hugo documentation has [template functions] section which contains commonly used functions to customize your hugo themes.
+<!--more-->
 
 ## Type Parameter
 

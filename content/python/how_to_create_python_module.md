@@ -1,15 +1,13 @@
 +++
+title = "How to create open source Python module"
+description = "How to create open source Python module"
+date = "2016-12-20T20:29:36+09:00"
+categories = ["python"]
 tags = [
   "python",
   "opensource",
 ]
-categories = [
-  "python",
-]
-draft = true
-date = "2016-12-20T20:29:36+09:00"
-title = "How to create open source Python module"
-
+thumbnail = ""
 +++
 
 You have created a fantastic python package and you want to share with the world.

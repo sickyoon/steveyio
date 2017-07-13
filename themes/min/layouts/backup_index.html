@@ -1,6 +1,10 @@
 {{ define "main" }}
 <section class="mw7 center">
-    {{ range first 10 .Data.Pages }}
+
+    
+    {{ $pages := where .Site.Pages "Type" "post" }}
+    {{ $pages = .Site.Pages }}
+    {{ range first 10 (where $pages ".IsPage" true) }}
     <article class="pv4 bb b--black-10 ph3 ph0-l">
         <a class="link dim dark-gray" href="{{ .RelPermalink }}">
             <div class="flex flex-column flex-row-ns">
@@ -25,7 +29,6 @@
             <time class="f6 db gray">{{- .Date.Format "Jan 2, 2006" -}}</time>
         </a>
     </article>
-    {{ end }}
     {{ end }}
 </section>
 {{ end }}

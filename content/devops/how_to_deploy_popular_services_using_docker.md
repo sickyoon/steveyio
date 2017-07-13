@@ -1,14 +1,15 @@
 +++
 title = "How to deploy popular services using Docker (MongoDB, Redis, Nginx)"
-tags = ["mongo", "redis", "docker"]
-categories = ["docker"]
+description = "How to deploy popular services using Docker (MongoDB, Redis, Nginx)"
 date = "2016-12-11T23:27:09+09:00"
-
-draft = true
+categories = ["devops"]
+tags = ["mongo", "redis", "docker"]
+thumbnail = ""
 +++
 
 Docker is containerization platform that provides `containers` that provide isolated environment for a single service.
 I have put together popular commands to run dockerized services instead of running them directly on host machine.
+<!--more-->
 
 ## MongoDB
 

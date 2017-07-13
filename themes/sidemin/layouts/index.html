@@ -1,6 +1,6 @@
 {{ define "main" }}
-<section class="mw7 center">
-    {{ range first 10 .Data.Pages }}
+<section class="measure-wide center">
+    {{ range first 4 .Data.Pages }}
     <article class="pv4 bb b--black-10 ph3 ph0-l">
         <a class="link dim dark-gray" href="{{ .RelPermalink }}">
             <div class="flex flex-column flex-row-ns">
@@ -9,10 +9,10 @@
                 {{ else }}
                 <div class="w-100 pr3-ns order-2 order-1-ns">
                 {{ end }}
-                    <h1 class="f3 athelas mt0 lh-title">
+                    <h1 class="f3 mt0 athelas lh-title" style="font-size: 1.7rem;">
                         {{- .Title -}}
                     </h1>
-                    <div class="f5 f4-l lh-copy athelas">
+                    <div class="f4 athelas lh-copy">
                         {{- .Summary -}}
                     </div>
                 </div>
@@ -25,7 +25,6 @@
             <time class="f6 db gray">{{- .Date.Format "Jan 2, 2006" -}}</time>
         </a>
     </article>
-    {{ end }}
     {{ end }}
 </section>
 {{ end }}

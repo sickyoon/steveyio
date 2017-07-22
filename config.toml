@@ -16,25 +16,4 @@ copyright = "(c) 2017 Sick Yoon"
 
 [params]
   description = "Gopher"
-
-[[menu.main]]
-    name = "Go"
-    weight = -110
-    url = "/golang/"
-[[menu.main]]
-    name = "Python"
-    weight = -109
-    url = "/python/"
-[[menu.main]]
-    name = "DevOps"
-    weight = -108
-    url = "/devops/"
-[[menu.main]]
-    name = "Cheat Sheet"
-    weight = -107
-    url = "/cheatsheet/"
-[[menu.main]]
-    name = "About"
-    weight = -100
-    url = "/about/"
-
+  sidebar = false

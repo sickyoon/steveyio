@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html class="" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html class="h-100" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
 {{ partial "header.html" . }}
 
-<body class="ma0">
+<body class="ma0 h-100">
 
     {{ partial "sidebar.html" . }}
 
-    <div class="main pa4">
+    {{ if .Site.Params.Sidebar }}
+    <div class="main-sidebar h-100">
+    {{ else }}
+    <div class="main-normal h-100">
+    {{ end }}
     {{ block "main" . }}
     {{ end }}
     </div>

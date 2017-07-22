@@ -1,21 +1,41 @@
-<nav class="h-100 fixed fl dib-l dn w-side sidebar">
+{{ if .Site.Params.Sidebar }}
+<nav class="h-100 fixed fl dib-l dn w-side bg-dark">
     <div class="tc mv4">
         <a class="link dim" href="{{- .Site.BaseURL -}}">
-            <h1 class="f2 fw1 avenir white mt3 mb2">{{ .Site.Title }}</h1>
-            <h2 class="f5 fw2 avenir light-gray tracked pt0 mt0">{{ .Site.Params.Description }}</h2>
+            <h1 class="f2 fw1 white mt3 mb2">{{ .Site.Title }}</h1>
+            <h2 class="f5 fw2 light-gray tracked pt0 mt0">{{ .Site.Params.Description }}</h2>
         </a>
     </div>
     
     <ul class="list mt5 cf ph4">
-        {{ range .Site.Menus.main }}
-        <li class="pv2 f5 fw1">
-            <a class="avenir link dim white" href="{{.URL}}">
+        <li class="pv2 f4 fw1">
+            <a class="link dim white" href="/golang">
                 <div class="w-100">
-               {{ .Name }}
+               Go
                </div>
             </a>
         </li>
-        {{ end }}
+        <li class="pv2 f4 fw1">
+            <a class="link dim white" href="/python">
+                <div class="w-100">
+               Python
+               </div>
+            </a>
+        </li>
+        <li class="pv2 f4 fw1">
+            <a class="link dim white" href="/devops">
+                <div class="w-100">
+               DevOps
+               </div>
+            </a>
+        </li>
+        <li class="pv2 f4 fw1">
+            <a class="link dim white" href="/about">
+                <div class="w-100">
+               About
+               </div>
+            </a>
+        </li>
     </ul>
     <div class="w-90 mb3 db pl3 center bottom-0 absolute cf tc">
         <a class="link dim white ph2" href="/">
@@ -29,19 +49,18 @@
         </a>
     </div>
 </nav>
-<nav class="w-100 fixed dib-m dib-s dib-xs dn-l sidebar ph3">
-    <a class="dib link dim" href="{{- .Site.BaseURL -}}">
-        <h1 class="f3 fw1 avenir white mv3">{{ .Site.Title }}</h1>
+<nav class="h3 w-100 fixed dib-m dib-s dib-xs dn-l bg-dark ph3">
+{{ else }}
+<nav class="db dt-l w-100 bg-dark fixed border-box pa3 ph5-l">
+{{ end }}
+    <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
+        <img src="http://tachyons.io/img/logo.jpg" class="dib w2 h2 br-100" alt="Site Name">
     </a>
-    <ul class="dib list cf pl5">
-        {{ range .Site.Menus.main }}
-        <li class="dib pv2 ph3 f5 fw1">
-            <a class="avenir link dim white" href="{{.URL}}">
-                <div class="w-100">
-               {{ .Name }}
-               </div>
-            </a>
-        </li>
-        {{ end }}
-    </ul>
+    <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Home">Home</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="How it Works">How it Works</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Blog">Blog</a>
+        <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Press">Press</a>
+        <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">Contact</a>
+    </div>
 </nav>

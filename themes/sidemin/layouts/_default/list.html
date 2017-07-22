@@ -1,33 +1,23 @@
 {{ define "main" }}
-<section class="measure-wide center">
-    <div class="mh4 tc">
-        <h1 class="f1 avenir fw5 mt3 mb2">{{ humanize .Section }}</h1>
+<div class="bg-dark pv5-ns pt2 pb4">
+    <div class="mw7 center pv3 ph4 tc">
+        <h1 class="white f1-ns f2 fw1 mv0 pv0">{{ humanize .Section }}</h1>
     </div>
+</div>
+<section class="measure-wide center pv4">
     {{ range .Data.Pages.ByDate.Reverse }}
-    <article class="pv4 bb b--black-10 ph3 ph0-l">
-        <div class="flex flex-column flex-row-ns">
-            {{ if .Params.Thumbnail }}
-            <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                {{ else }}
+    <a class="link dim dark-gray" href="{{ .RelPermalink }}">
+        <article class="pv4 bb b--black-10 ph3 ph0-l">
+            <div class="flex flex-column flex-row-ns">
                 <div class="w-100 pr3-ns order-2 order-1-ns">
-                    {{ end }}
-                    <a class="link dim dark-gray" href="{{ .RelPermalink }}">
-                        <h1 class="f3 athelas mt0 lh-title">
+                        <h1 class="f3 fw4 mt0 lh-title">
                             {{- .Title -}}
                         </h1>
-                    </a>
-                    <p class="f5 f4-l lh-copy athelas">
-                        {{- .Summary -}}
-                    </p>
                 </div>
-                {{ if .Params.Thumbnail }}
-                <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                    <img src="{{ .Params.Thumbnail }}" class="db" alt="">
-                </div>
-                {{ end }}
             </div>
             <time class="f6 db gray">{{- .Date.Format "Jan 2, 2006" -}}</time>
-    </article>
+        </article>
+    </a>
     {{ end }}
 </section>
 {{ end }}

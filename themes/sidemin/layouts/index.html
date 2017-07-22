@@ -1,30 +1,23 @@
 {{ define "main" }}
-<section class="measure-wide center">
-    {{ range first 4 .Data.Pages }}
-    <article class="pv4 bb b--black-10 ph3 ph0-l">
-        <a class="link dim dark-gray" href="{{ .RelPermalink }}">
+<div class="bg-dark pv5-ns pt2 pb4">
+    <div class="mw7 center pv3 ph4 tc">
+        <h1 class="white f1-ns f2 fw1 mv0 pv0">Developer Notes</h1>
+    </div>
+</div>
+<section class="measure-wide center pv4">
+    {{ range .Data.Pages.ByDate.Reverse }}
+    <a class="link dim dark-gray" href="{{ .RelPermalink }}">
+        <article class="pv4 bb b--black-10 ph3 ph0-l">
             <div class="flex flex-column flex-row-ns">
-                {{ if .Params.Thumbnail }}
-                <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                {{ else }}
                 <div class="w-100 pr3-ns order-2 order-1-ns">
-                {{ end }}
-                    <h1 class="f3 mt0 athelas lh-title" style="font-size: 1.7rem;">
-                        {{- .Title -}}
-                    </h1>
-                    <div class="f4 athelas lh-copy">
-                        {{- .Summary -}}
-                    </div>
+                        <h1 class="f3 fw4 mt0 lh-title">
+                            {{- .Title -}}
+                        </h1>
                 </div>
-                {{ if .Params.Thumbnail }}
-                <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                    <img src="{{ .Params.Thumbnail }}" class="db" alt="Photo of a whale's tale coming crashing out of the water.">
-                </div>
-                {{ end }}
             </div>
             <time class="f6 db gray">{{- .Date.Format "Jan 2, 2006" -}}</time>
-        </a>
-    </article>
+        </article>
+    </a>
     {{ end }}
 </section>
 {{ end }}

@@ -1,18 +1,34 @@
 body {
-    
+    font-family: Avenir,sans-serif;
 }
 
 .w-side {
     width: 13rem;
 }
 
-.sidebar {
+.bg-dark {
     background-color: #232020; 
     color: #fdfdfd; 
 }
 
-.main {
-    margin-left: 15rem;
+code {
+    font-size: 1rem;
+}
+
+@media(min-width: 60rem) {
+    .main-sidebar {
+        margin-left: 13rem;
+    }
+}
+
+@media(max-width: 60rem) {
+    .main-sidebar {
+        padding-top: 4rem;
+    }
+}
+
+.main-normal {
+    padding-top: 4rem;
 }
 
 pre {

@@ -1,10 +1,14 @@
 {{ define "main" }}
-<article class="pa4 f4 lh-copy measure-wide center athelas">
-{{ if .Params.nodate }}
+{{ if .Params.custom }}
     {{- .Content -}}
 {{ else }}
-    <h1 class="tc f1 fw5 mv0">{{- .Title -}}</h1>
-    <time class="pt4 pb4 tc f5 db dark-gray">{{ .Date.Format "Jan 2, 2006" }}</time>
+<div class="bg-dark pt5 pb5">
+    <h1 class="tc f1 fw4 mv0 ph4">{{- .Title -}}</h1>
+    {{ if not .Params.nodate }}
+    <time class="fw1 mt4 pt4 tc f5 db">{{ .Date.Format "Jan 2, 2006" }}</time>
+    {{ end }}
+</div>
+<article class="pa4 pt5 f4 lh-copy measure-wide center">
     {{- .Content -}}
     <section class="mw7 pa3 pa4-m pa3-l tc">
             <h4 class="f4 dark-gray dib ph4 pv1">Tags:</h4>
@@ -17,19 +21,21 @@
             {{ if .PrevInSection }}
             <a class="dim link dark-gray" href="{{.PrevInSection.Permalink}}">
                 <i class="fa fa-chevron-left pr3" aria-hidden="true"></i>
-                {{- .PrevInSection.Title -}}
+                <span class="dn di-ns">{{- .PrevInSection.Title -}}</span>
             </a>
             {{ end }}
         </div>
         <div class="fl w-50 w-50-ns pa2 tr">
             {{ if .NextInSection }}
             <a class="link dim dark-gray" href="{{.NextInSection.Permalink}}">
-                {{- .NextInSection.Title -}}
+                <span class="dn di-ns">{{- .NextInSection.Title -}}</span>
                 <i class="fa fa-chevron-right pl3" aria-hidden="true"></i>
             </a>
             {{ end }}
         </div>
     </div>
-{{ end }}
 </article>
+{{ end }}
+
+
 {{ end }}

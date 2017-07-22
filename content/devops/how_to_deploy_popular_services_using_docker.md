@@ -9,7 +9,6 @@ thumbnail = ""
 
 Docker is containerization platform that provides `containers` that provide isolated environment for a single service.
 I have put together popular commands to run dockerized services instead of running them directly on host machine.
-<!--more-->
 
 ## MongoDB
 

@@ -13,7 +13,6 @@ This blog uses [hugo-redlounge] theme for instance.
 Often times, you need to add custom pages and want to filter them out from your main page.
 For example, "about" page of this blog does not appear on the main list.
 Thankfully, Hugo documentation has [template functions] section which contains commonly used functions to customize your hugo themes.
-<!--more-->
 
 ## Type Parameter
 

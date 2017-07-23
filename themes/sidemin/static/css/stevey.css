@@ -15,17 +15,28 @@ code {
     font-size: 1rem;
 }
 
-@media(min-width: 60rem) {
+@media(min-width: 60em) {
     .main-sidebar {
         margin-left: 13rem;
     }
 }
 
-@media(max-width: 60rem) {
+@media(max-width: 60em) {
     .main-sidebar {
         padding-top: 4rem;
     }
 }
+
+@media(max-width: 30em) {
+    
+}
+
+@media(min-width: 30em) {
+    .h8-12 {
+        height: 12rem;
+    }
+}
+
 
 pre {
     font-size: 0.7em;

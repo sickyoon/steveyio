@@ -3,14 +3,14 @@
 
 {{ partial "header.html" . }}
 
-<body class="ma0 h-100">
+<body class="h-100">
 
     {{ partial "sidebar.html" . }}
 
     {{ if .Site.Params.Sidebar }}
     <div class="main-sidebar h-100">
     {{ else }}
-    <div class="main-normal h-100">
+    <div class="main-normal">
     {{ end }}
     {{ block "main" . }}
     {{ end }}

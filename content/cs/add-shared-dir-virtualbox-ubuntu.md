@@ -5,6 +5,7 @@ date = "2017-05-05T21:20:13-04:00"
 categories = ["commands"]
 tags = ["virtualbox"]
 thumbnail = ""
+hide = true
 +++
 
 Mount shared directory on Ubuntu on virtualbox running on Windows.

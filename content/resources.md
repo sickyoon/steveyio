@@ -1,6 +1,7 @@
 +++
 title = "Resources"
 nodate = true
+hide = true
 +++
 
 Articles that I find interesting ...

@@ -6,5 +6,6 @@ categories = ["commands"]
 tags = ["mongodb"]
 draft = true
 thumbnail = ""
+hide = true
 +++
 

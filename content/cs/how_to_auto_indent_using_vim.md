@@ -5,6 +5,7 @@ date = "2016-12-21T02:44:04+09:00"
 categories = ["commands"]
 tags = ["vim"]
 thumbnail = ""
+hide = true
 +++
 
 Handy command to auto-indent code in vim

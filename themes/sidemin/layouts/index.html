@@ -1,16 +1,16 @@
 {{ define "main" }}
-<div class="bg-dark pv5-ns pt2 pb4">
+<div class="bg-dark pt4-ns pb5-ns pt2 pb4 h8-12">
     <div class="mw7 center pv3 ph4 tc">
         <h1 class="white f1-ns f2 fw1 mv0 pv0">Developer Notes</h1>
     </div>
 </div>
 <section class="measure-wide center pv4">
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range first 5 (where .Data.Pages.ByDate.Reverse "Params.hide" "!=" true) }}
     <a class="link dim dark-gray" href="{{ .RelPermalink }}">
         <article class="pv4 bb b--black-10 ph3 ph0-l">
             <div class="flex flex-column flex-row-ns">
                 <div class="w-100 pr3-ns order-2 order-1-ns">
-                        <h1 class="f3 fw4 mt0 lh-title">
+                        <h1 class="f3 mt0 lh-title">
                             {{- .Title -}}
                         </h1>
                 </div>

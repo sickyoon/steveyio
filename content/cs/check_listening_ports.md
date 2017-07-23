@@ -4,7 +4,6 @@ description = "Check for listening ports"
 date = "2017-07-11T19:16:39-04:00"
 categories = ["commands"]
 tags = ["ports"]
-thumbnail = ""
 hide = true
 +++
 

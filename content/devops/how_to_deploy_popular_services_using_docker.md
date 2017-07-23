@@ -4,7 +4,7 @@ description = "How to deploy popular services using Docker (MongoDB, Redis, Ngin
 date = "2016-12-11T23:27:09+09:00"
 categories = ["devops"]
 tags = ["mongo", "redis", "docker"]
-thumbnail = ""
+image = "http://3.bp.blogspot.com/-G9EKh5P7A7Y/VmHAn1nMHrI/AAAAAAAALIE/u9AdEAInZG0/s320/docker_nginx.png"
 +++
 
 Docker is containerization platform that provides `containers` that provide isolated environment for a single service.

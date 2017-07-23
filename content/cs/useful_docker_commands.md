@@ -5,7 +5,6 @@ date = "2017-07-11T19:14:33-04:00"
 categories = ["commands"]
 tags = ["docker"]
 draft = true
-thumbnail = ""
 hide = true
 +++
 

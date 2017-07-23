@@ -4,7 +4,6 @@ description = "Add my SSH key to remote host authorized keys"
 date = 2017-04-20T16:04:56-04:00
 categories = ["commands"]
 tags = ["ssh"]
-thumbnail = ""
 hide = true
 +++
 

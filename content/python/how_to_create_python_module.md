@@ -7,7 +7,7 @@ tags = [
   "python",
   "opensource",
 ]
-thumbnail = ""
+image = ""
 +++
 
 You have created a fantastic python package and you want to share with the world.

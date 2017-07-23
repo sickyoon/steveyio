@@ -4,20 +4,16 @@
         <h1 class="white f1-ns f2 fw1 mv0 pv0">Developer Notes</h1>
     </div>
 </div>
-<section class="measure-wide center pv4">
     {{ range first 5 (where .Data.Pages.ByDate.Reverse "Params.hide" "!=" true) }}
-    <a class="link dim dark-gray" href="{{ .RelPermalink }}">
-        <article class="pv4 bb b--black-10 ph3 ph0-l">
-            <div class="flex flex-column flex-row-ns">
-                <div class="w-100 pr3-ns order-2 order-1-ns">
-                        <h1 class="f3 mt0 lh-title">
-                            {{- .Title -}}
-                        </h1>
-                </div>
-            </div>
-            <time class="f6 db gray">{{- .Date.Format "Jan 2, 2006" -}}</time>
-        </article>
-    </a>
+    <article class="br2 ba dark-gray b--black-10 mv4 w-100 measure-wide center">
+        <div class="h4 cover" style="background-image: url({{- .Params.image -}});">
+        </div>
+        <div class="pa2 ph3-ns pb3-ns">
+            <h1 class="f5 f4-ns mv0">{{- .Title -}}</h1>
+            <p class="f6 lh-copy measure mt2 mid-gray">
+            {{ .Summary }}
+            </p>
+        </div>
+    </article>
     {{ end }}
-</section>
 {{ end }}

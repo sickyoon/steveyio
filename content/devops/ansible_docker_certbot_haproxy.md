@@ -4,6 +4,7 @@ description = "Dockerized letsencrypt-ready HAProxy using Ansible"
 date = ""
 categories = ["devops"]
 tags = ["ansible", "docker", "haproxy", "certbot"]
+image = "https://images.unsplash.com/photo-1455383333344-451b6147021b?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop="
 +++
 
 Ansible is configuration automation tool that does not require client like Chef. You only need Python running on the server (which comes with most linux distribution) and everything is done through SSH. Here, I am going to show you how to write ansible yaml file to deploy dockerized HAProxy with letsencrypt support.

@@ -5,7 +5,6 @@ date = "2017-04-20T16:12:43-04:00"
 categories = ["commands"]
 tags = ["mongodb"]
 draft = true
-thumbnail = ""
 hide = true
 +++
 

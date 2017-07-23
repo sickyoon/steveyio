@@ -4,7 +4,7 @@ description = "How to filter Hugo post list"
 date = "2016-12-20T19:34:32+09:00"
 categories = ["golang"]
 tags = ["golang", "hugo"]
-thumbnail = "https://gohugo.io/img/hugo.png"
+image = "https://gohugo.io/img/hugo.png"
 +++
 
 Hugo is a fast static site generator based on Go language.

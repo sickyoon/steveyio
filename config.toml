@@ -4,6 +4,8 @@ baseURL = "http://stevey.io"
 languageCode = "en-us"
 theme = "sidemin"
 copyright = "(c) 2017 Sick Yoon"
+paginate = 6
+
 
 [author]
   name = "Sick Yoon"

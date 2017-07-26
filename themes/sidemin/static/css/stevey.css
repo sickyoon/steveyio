@@ -7,7 +7,7 @@ body {
 }
 
 .bg-dark {
-    background-color: #232020; 
+    background-color: #232020;
     color: #fdfdfd; 
 }
 
@@ -59,6 +59,11 @@ a {
 
 .overflowing {
     position: relative;
-    height: 15rem;
+    height: 20rem;
     z-index: -100;
+}
+
+.slanted {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 }

@@ -51,20 +51,20 @@
 </nav>
 <nav class="dib dn-l bg-dark ph3">
 {{ else }}
-<nav class="w-100 cf bg-dark ma0 pa0">
+<nav class="w-100 cf {{ if not .Params.Image }}bg-dark{{ end }} ma0 pa0">
 {{ end }}
     <a class="white link dim tc fl-ns" href="/" title="Home">
         <h1 class="f3 fw3-ns fw1 mv0 pt4 pl5-ns tracked pt4-ns mt2-ns pb3 ml5-ns">stevey.io</h1>
     </a>
     <ul class="tc list mv0 pa0 pb4 pt4-ns mt3-ns mr5-ns fr-ns">
         <li class="dib w3-ns tc mh2">
-            <a class="link dim white f5-ns f6" href="/golang">Golang</a>
+            <a class="link dim white f5-ns f6" href="/categories/golang">Golang</a>
         </li>
         <li class="dib w3-ns tc mh2">
-            <a class="link dim white f5-ns f6" href="/python">Python</a>
+            <a class="link dim white f5-ns f6" href="/categories/python">Python</a>
         </li>
         <li class="dib w3-ns tc mh2">
-            <a class="link dim white f5-ns f6" href="/devops">DevOps</a>
+            <a class="link dim white f5-ns f6" href="/categories/devops">DevOps</a>
         </li>
         <li class="dib w3-ns tc mh2">
             <a class="link dim white f5-ns f6" href="/about">About</a>

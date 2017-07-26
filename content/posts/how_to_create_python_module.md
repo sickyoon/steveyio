@@ -7,7 +7,7 @@ tags = [
   "python",
   "opensource",
 ]
-image = ""
+image = "https://images.unsplash.com/photo-1496245454747-b17bebc37e41?dpr=1&auto=compress,format&fit=max&w=376&q=80&cs=tinysrgb&crop="
 +++
 
 You have created a fantastic python package and you want to share with the world.

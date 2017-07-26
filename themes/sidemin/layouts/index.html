@@ -4,16 +4,25 @@
         <h1 class="white f1-ns f2 fw1 mv0 pv0">Developer Notes</h1>
     </div>
 </div>
-    {{ range first 5 (where .Data.Pages.ByDate.Reverse "Params.hide" "!=" true) }}
-    <article class="br2 ba dark-gray b--black-10 mv4 w-100 measure-wide center">
-        <div class="h4 cover" style="background-image: url({{- .Params.image -}});">
+
+    <div class="fl w-100 pa5">
+        {{ range first 5 (where .Data.Pages.ByDate.Reverse "Params.hide" "!=" true) }}
+        <div class="fl w-100 w-50-m w-33-l pa2">
+            <a class="cf link dark-gray" href="{{ .RelPermalink }}">
+                <article class="bg-white cf ba b--black-10 br3 center measure-wide" style="min-height: 24rem;">
+                    <div class="h4 cover br3" style="background-image: url({{- .Params.image -}});"></div>
+                    <div class="pa2 ph3-ns pb3-ns mid-gray">
+                        <h1 class="f5 f4-ns mv0 pt3 dark-gray" style="min-height: 5rem;">{{- .Title -}}</h1>
+                        <p class="f6 lh-copy mt2">
+                            {{ substr .Summary 0 300 }} ...
+                        </p>
+                    </div>
+                </article>
+            </a>
         </div>
-        <div class="pa2 ph3-ns pb3-ns">
-            <h1 class="f5 f4-ns mv0">{{- .Title -}}</h1>
-            <p class="f6 lh-copy measure mt2 mid-gray">
-            {{ .Summary }}
-            </p>
-        </div>
-    </article>
-    {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="overflowing bg-dark">
+    </div>
 {{ end }}

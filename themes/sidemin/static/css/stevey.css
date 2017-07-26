@@ -33,7 +33,7 @@ code {
 
 @media(min-width: 30em) {
     .h8-12 {
-        height: 12rem;
+        height: 7rem;
     }
 }
 
@@ -51,4 +51,14 @@ p {
 h1 {
     font-weight: 600;
     font-size: 2rem;
+}
+
+a {
+    outline: none !important;
+}
+
+.overflowing {
+    position: relative;
+    height: 15rem;
+    z-index: -100;
 }

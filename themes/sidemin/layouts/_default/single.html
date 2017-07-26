@@ -2,13 +2,14 @@
 {{ if .Params.custom }}
     {{- .Content -}}
 {{ else }}
-<div class="bg-dark pt5 pb5">
+<div class="{{ if not .Params.Image }}bg-dark{{ end }} pt5 pb5">
     <h1 class="tc f1 fw4 mv0 ph4">{{- .Title -}}</h1>
     {{ if not .Params.nodate }}
     <time class="fw1 mt4 pt4 tc f5 db">{{ .Date.Format "Jan 2, 2006" }}</time>
     {{ end }}
 </div>
-<article class="pa4 pt5 f4 lh-copy measure-wide center">
+<div class="w-100 bg-white">
+<article class="pa4 pt5 f4 lh-copy measure-wide center bg-white">
     {{- .Content -}}
     <section class="mw7 pa3 pa4-m pa3-l tc">
             <h4 class="f4 dark-gray dib ph4 pv1">Tags:</h4>
@@ -35,6 +36,7 @@
         </div>
     </div>
 </article>
+</div>
 {{ end }}
 
 

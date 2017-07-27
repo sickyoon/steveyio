@@ -16,8 +16,12 @@ Thankfully, Hugo documentation has [template functions] section which contains c
 
 ## Type Parameter
 
-There is a parameter called `Type`.
-When you create a new blog post using `hugo new post/new-blog-post.md`, new file `new-blog-post.md` is created with `type` automatically set to `post`.
+There is a parameter called **Type**.
+When you create a new blog post using `hugo new`, new file **new-blog-post.md** is created with **type** automatically set to **post**.
+```bash
+hugo new post/new-blog-post.md
+```
+
 However when you create a new post using `hugo new about.md`, then new page is created with `type` set to `page`.
 Therefore, in order to hide everything but *blog posts*, we only need to filter the list to show only `post` type.
 

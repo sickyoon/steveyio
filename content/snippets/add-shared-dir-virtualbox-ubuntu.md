@@ -8,7 +8,6 @@ hide = true
 +++
 
 Mount shared directory on Ubuntu on virtualbox running on Windows.
-<!--more-->
 
 ```
 usermod -aG vboxsf <youruser>

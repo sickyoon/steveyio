@@ -1,26 +1,26 @@
 {{ define "main" }}
 
-<div class="bg-dark pt4-ns pb5-ns pt2 pb4 h8-12">
-    <div class="mw7 center pv3 ph4 tc">
+<div class="bg-dark pv5-ns pt2 pb4 h8-12">
+    <div class="mw7 center pt2 ph4 tc">
         <h1 class="white f1-ns f2 fw1 mv0 pv0">Developer Notes</h1>
     </div>
 </div>
 
 <div class="fl w-100 pa5-l pa3">
-    {{ $paginator := .Paginate (where .Data.Pages.ByPublishDate "Params.hide" "!=" true) }}
+    {{ $paginator := .Paginate (where .Data.Pages.ByPublishDate ".Section" "==" "posts") }}
     {{ range $paginator.Pages }}
     <div class="fl w-100 w-50-m w-33-l pa2">
-        <a class="cf link dark-gray" href="{{ .RelPermalink }}">
-            <article class="bg-white cf ba b--black-10 br3 center measure-wide" style="min-height: 24rem;">
-                <div class="h4 cover br3" style="background-image: url({{- .Params.image -}});"></div>
+        <article class="bg-white cf ba b--black-10 br3 center measure-wide" style="min-height: 24rem;">
+            <a class="cf dim link dt dark-gray" href="{{ .RelPermalink }}">
+                <div class="h4 cover br3 w-100" style="background-image: url({{- .Params.image -}});"></div>
                 <div class="pa2 ph3-ns pb3-ns mid-gray">
                     <h1 class="f5 f4-ns mv0 pt3 dark-gray" style="min-height: 5rem;">{{- .Title -}}</h1>
                     <p class="f6 lh-copy mt2">
                         {{ substr .Summary 0 300 }} ...
                     </p>
                 </div>
-            </article>
-        </a>
+            </a>
+        </article>
     </div>
     {{ end }}
     {{ template "_internal/pagination.html" . }}

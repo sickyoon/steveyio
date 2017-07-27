@@ -8,7 +8,6 @@ hide = true
 +++
 
 Handy command to auto-indent code in vim
-<!--more-->
 
 ## Auto indent entire File
 

@@ -8,7 +8,6 @@ hide = true
 +++
 
 Check for services bound to listening ports
-<!--more-->
 
 ```bash
 sudo netstat -tulnp

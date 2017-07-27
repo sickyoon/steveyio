@@ -1,5 +1,6 @@
 body {
-    font-family: Avenir,sans-serif;
+    /*font-family: Avenir,sans-serif;*/
+    font-family: -apple-system,"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .w-side {
@@ -21,22 +22,11 @@ code {
     }
 }
 
-@media(max-width: 60em) {
-    .main-sidebar {
-        padding-top: 4rem;
-    }
-}
-
-@media(max-width: 30em) {
-    
-}
-
 @media(min-width: 30em) {
     .h8-12 {
         height: 7rem;
     }
 }
-
 
 pre {
     font-size: 0.7em;
@@ -66,4 +56,67 @@ a {
 .slanted {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+}
+
+.shadow {
+   text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* Content Formatting */
+
+.content p {
+    /*font-family: Avenir,sans-serif;*/
+    font-family: Avenir,-apple-system,"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    font-size: 1.2rem;
+    /*letter-spacing: 0.05em;*/
+    /*word-spacing: 1.5px;*/
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+@media(max-width: 30em) {
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+.content strong {
+    font-weight: 600;
+}
+
+.content a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(40.9%, 47.6%, 99.9%);
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.content p code {
+    font-family: Inconsolata,monospace;
+    font-size: 1rem;
+    background-color: rgb(88.6%, 81.6%, 81.6%, 0.2);
+    padding: 0.3em;
+}
+
+.content pre code {
+    font-family: Inconsolata,monospace;
+    font-size: 1rem;
+    margin: 2em 0em;
 }

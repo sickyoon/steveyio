@@ -1,5 +1,5 @@
 {{ if .Site.Params.Sidebar }}
-<nav class="h-100 fixed fl dib-l dn w-side bg-dark">
+<nav class="h-100 fixed fl dib-l dn w-side bg-dark avenir">
     <div class="tc mv4">
         <a class="link dim" href="{{- .Site.BaseURL -}}">
             <h1 class="f2 fw1 white mt3 mb2">{{ .Site.Title }}</h1>
@@ -7,34 +7,21 @@
         </a>
     </div>
     
-    <ul class="list mt5 cf ph4">
-        <li class="pv2 f4 fw1">
-            <a class="link dim white" href="/golang">
-                <div class="w-100">
-               Go
-               </div>
-            </a>
+    <ul class="list mt5 cf ph4 f5 fw1">
+        <li class="w3-ns pv2">
+            <a class="link dim white" href="/categories/golang">Go</a>
         </li>
-        <li class="pv2 f4 fw1">
-            <a class="link dim white" href="/python">
-                <div class="w-100">
-               Python
-               </div>
-            </a>
+        <li class="w3-ns pv2">
+            <a class="link dim white" href="/categories/python">Python</a>
         </li>
-        <li class="pv2 f4 fw1">
-            <a class="link dim white" href="/devops">
-                <div class="w-100">
-               DevOps
-               </div>
-            </a>
+        <li class="w3-ns pv2">
+            <a class="link dim white" href="/categories/devops">DevOps</a>
         </li>
-        <li class="pv2 f4 fw1">
-            <a class="link dim white" href="/about">
-                <div class="w-100">
-               About
-               </div>
-            </a>
+        <li class="w3-ns pv2">
+            <a class="link dim white" href="/snippets">Snippets</a>
+        </li>
+        <li class="w3-ns pv2">
+            <a class="link dim white" href="/about">About</a>
         </li>
     </ul>
     <div class="w-90 mb3 db pl3 center bottom-0 absolute cf tc">
@@ -49,7 +36,7 @@
         </a>
     </div>
 </nav>
-<nav class="dib dn-l bg-dark ph3">
+<nav class="w-100 cf {{ if not .Params.Image }}bg-dark{{ end }} ma0 pa0 dn-l">
 {{ else }}
 <nav class="w-100 cf {{ if not .Params.Image }}bg-dark{{ end }} ma0 pa0">
 {{ end }}
@@ -67,7 +54,10 @@
             <a class="link dim white f5-ns f6" href="/categories/devops">DevOps</a>
         </li>
         <li class="dib w3-ns tc mh2">
+            <a class="link dim white f5-ns f6" href="/snippets">Snippets</a>
+        </li>
+        <li class="dib w3-ns tc mh2">
             <a class="link dim white f5-ns f6" href="/about">About</a>
-        </li>        
+        </li>
     </ul>
 </nav>

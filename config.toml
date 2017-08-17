@@ -6,7 +6,6 @@ theme = "sidemin"
 copyright = "(c) 2017 Sick Yoon"
 paginate = 6
 
-
 [author]
   name = "Sick Yoon"
   email = "sick.yoon@gmail.com"
@@ -19,3 +18,5 @@ paginate = 6
 [params]
   description = "Gopher"
   sidebar = true
+
+googleAnalytics = "UA-104789888-1"

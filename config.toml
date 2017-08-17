@@ -19,4 +19,5 @@ paginate = 6
   description = "Gopher"
   sidebar = true
 
+disableLiveReload = true
 googleAnalytics = "UA-104789888-1"

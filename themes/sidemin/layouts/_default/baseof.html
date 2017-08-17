@@ -3,7 +3,15 @@
 
 {{ partial "header.html" . }}
 
-<body class="h-100 cover" style="background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url('{{ .Params.Image }}') no-repeat center;">
+<body class="h-100 cover" 
+    style="
+    {{ if .Params.Image }}
+        background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('{{ .Params.Image }}') no-repeat center;
+    {{ else }}
+        background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+    {{ end }}
+    "
+>
 
     {{ partial "sidebar.html" . }}
 

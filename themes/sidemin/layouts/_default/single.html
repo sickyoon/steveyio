@@ -4,7 +4,7 @@
 {{ else }}
 <div class="avenir {{ if not .Params.Image }}bg-dark{{ end }} pt5 pb5 header">
     {{ if not .Params.notitle }}
-    <h1 class="tc color-light f1-ns f2 fw4 mt3 ph4 post-title">{{- .Title -}}</h1>
+    <h1 class="tc color-light f1-ns f2 fw4 mt4 ph4 post-title">{{- .Title -}}</h1>
     {{ end }}
     {{ if not .Params.nodate }}
     <time class="color-light f5 fw1 mt4 pt4 tc db">{{ .Date.Format "Jan 2, 2006" }}</time>

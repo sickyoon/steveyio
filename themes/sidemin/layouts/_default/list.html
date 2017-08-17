@@ -8,15 +8,15 @@
 
 <div class="fl w-100 pa5-l pa3">
     {{ $paginator := .Paginate .Data.Pages.ByPublishDate }}
-    {{ range $paginator.Pages }}
-    <div class="fl w-100 w-50-m w-33-l pa2">
+    {{ range $paginator.Pages.Reverse }}
+    <div class="fl w-100 w-50-m w-third-l pa2">
         <article class="bg-white cf ba b--black-10 br3 center measure-wide" style="min-height: 24rem;">
             <a class="cf dim link dt color-dark" href="{{ .RelPermalink }}">
                 <div class="h4 cover br3" style="background-image: url({{- .Params.image -}});"></div>
-                <div class="pa2 ph3-ns pb3-ns">
+                <div class="pa2 ph3-ns pb3-ns" style="max-height: 15rem;overflow: hidden;">
                     <h1 class="f5 f4-ns mv0 pt3 color-dark" style="min-height: 5rem;">{{- .Title -}}</h1>
                     <p class="f6 lh-copy mt2 mid-gray">
-                        {{ substr .Summary 0 300 }} ...
+                        {{ substr .Summary 0 250 }} ...
                     </p>
                 </div>
             </a>

@@ -7,7 +7,7 @@ tags = [
   "python",
   "opensource",
 ]
-image = "https://images.unsplash.com/photo-1496245454747-b17bebc37e41?dpr=1&auto=compress,format&fit=max&w=376&q=80&cs=tinysrgb&crop="
+image = "/img/stars.jpg"
 +++
 
 You have created a fantastic python package and you want to share with the world.
@@ -20,7 +20,6 @@ We will create a simple python library that runs asynchronous function periodica
 `asyncio` is built-in asynchronous library that allows you to use `event loops` to execute tasks asynchronously.
 By default, it does not have a feature to run asynchronous function periodically such as Tornado's PeriodcTask or Golang's Timer.
 We are going to name it `aio_periodic_task`.
-You can find a complete library here at https://github.com/sickyoon/aio_periodic_task.git
 
 ## Structure
 
@@ -182,7 +181,15 @@ classifiers = [
 ## Upload to PIP
 
 Now your package is ready to be uploaded to PIP.
-This is covered in my next article `How to upload python module to PIP`
+I will cover this in separate article, `How to upload python module to PIP`.
+
+## Installation
+
+Once uploaded to PIP, you can install your library with pip
+
+```
+pip install aio_periodic_task
+```
 
 [Installing Python Modules]: https://docs.python.org/3.5/install/
 

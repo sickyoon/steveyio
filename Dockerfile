@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV HUGO_VERSION 0.20.4
+ENV HUGO_VERSION 0.30.2
 ENV HUGO_BASE_URL https://stevey.io
 
 RUN apk add --no-cache curl

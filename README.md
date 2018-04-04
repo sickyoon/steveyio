@@ -1,7 +1,3 @@
 
+# stevey.io Blog
 
-## Installation
-
-```
-pip install Pygments
-```

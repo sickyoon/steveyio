@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  reverse-proxy:
+  traefik:
     image: traefik
     command: --docker
     restart: always
@@ -12,13 +12,15 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "./traefik.toml:/etc/traefik/traefik.toml"
-      - "./run/acme:/etc/traefik/acme"
+      - "./acme:/etc/traefik/acme"
     container_name: traefik
 
   blog:
-    build: .
+    image: registry.gitlab.com/shicky/steveyio:latest
     environment:
       - "HUGO_BASE_URL=https://stevey.io"
     labels:
       - "traefik.frontend.rule=Host:stevey.io"
+    container_name: blog
+
 

@@ -12,7 +12,6 @@ container:
   before_script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
   script:
-    - docker pull $CONTAINER_IMAGE:latest || true
-    - docker build --cache-from $CONTAINER_IMAGE:latest --tag $CONTAINER_IMAGE:$CI_BUILD_REF --tag
-    - docker push $CONTAINER_IMAGE:$CI_BUILD_REF
+    - docker build --tag $CONTAINER_IMAGE:latest .
     - docker push $CONTAINER_IMAGE:latest
+

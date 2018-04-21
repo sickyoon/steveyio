@@ -1,6 +1,6 @@
 title = "stevey.io"
 
-baseURL = "http://stevey.io"
+baseURL = "https://stevey.io"
 languageCode = "en-us"
 theme = "sidemin"
 copyright = "(c) 2017 Sick Yoon"
@@ -20,4 +20,3 @@ paginate = 6
   sidebar = true
 
 disableLiveReload = true
-googleAnalytics = "UA-104789888-1"

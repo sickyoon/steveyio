@@ -1,14 +1,14 @@
-title = "stevey.io"
+title = "yoons.io"
 
-baseURL = "https://stevey.io"
+baseURL = "https://yoons.io"
 languageCode = "en-us"
 theme = "sidemin"
-copyright = "(c) 2017 Sick Yoon"
+copyright = "(c) 2018 Sick Yoon"
 paginate = 6
 
 [author]
   name = "Sick Yoon"
-  email = "sick.yoon@gmail.com"
+  email = "iam@yoons.io"
 
 [sitemap]
   changefreq = "monthly"

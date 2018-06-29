@@ -16,11 +16,12 @@ services:
     container_name: traefik
 
   blog:
-    image: registry.gitlab.com/shicky/steveyio:latest
+    #image: registry.gitlab.com/shicky/blog:latest
+    image: blog:latest
     environment:
-      - "HUGO_BASE_URL=https://stevey.io"
+      - "HUGO_BASE_URL=https://yoons.io"
     labels:
-      - "traefik.frontend.rule=Host:stevey.io"
+      - "traefik.frontend.rule=Host:yoons.io"
     container_name: blog
 
 

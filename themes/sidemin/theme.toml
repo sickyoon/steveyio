@@ -3,13 +3,13 @@
 
 name = "Sidemin"
 license = "MIT"
-licenselink = "https://github.com/sickyoon/steveyio"
+licenselink = "https://github.com/sickyoon/blog"
 description = ""
-homepage = "https://stevey.io"
+homepage = "https://yoons.io"
 tags = []
 features = []
 min_version = "0.20.7"
 
 [author]
   name = "Sick Yoon"
-  homepage = "https://stevey.io"
+  homepage = "https://yoons.io"

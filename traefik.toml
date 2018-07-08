@@ -14,12 +14,12 @@ defaultEntryPoints = ["http", "https"]
 
 [docker]
 endpoint = "unix:///var/run/docker.sock"
-domain = "stevey.io"
+domain = "yoons.io"
 watch = true
 exposedbydefault = false
 
 [acme]
-email = "dev@stevey.io"
+email = "iam@yoons.io"
 storage = "/etc/traefik/acme/acme.json"
 entryPoint = "https"
 acmeLogging = true
